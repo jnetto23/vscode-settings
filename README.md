@@ -6,6 +6,7 @@ Configurações do meu vscode!
  - Color Highlight
  - DotENV
  - Dracula Oficial
+ - EditorConfig for VS Code
  - ESLint
  - GitHub
  - GitLens
@@ -14,6 +15,7 @@ Configurações do meu vscode!
  - Live Server
  - Material Icon Theme
  - PHP IntelliSense
+ - Prettier - Code formatter
  - Rocketseat React Native
  - Rocketseat ReactJS
  - SQL Server (mssql)
@@ -24,26 +26,29 @@ Configurações do meu vscode!
 Ctrl + Shift + P -> settings.json    
 ```JavaScript
 {
-    "window.zoomLevel": -1,
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Dracula",
-    "workbench.iconTheme": "material-icon-theme",
-    
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures":true,
-    "editor.fontSize": 14,
-    "editor.renderLineHighlight": "gutter",
-
-    "explorer.confirmDelete": false,
-    
-    "liveServer.settings.donotShowInfoMsg": true,
-
-    "emmet.triggerExpansionOnTab": true,
-    "emmet.syntaxProfiles": {
-        "javascript": "jsx",
-    },
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact",
-    },
+  "window.zoomLevel": -1,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 20,
+  "editor.formatOnSave": true,
+  "editor.rulers": [80, 120],
+  "editor.tabSize": 2,
+  "editor.renderLineHighlight": "gutter",
+  "terminal.integrated.fontSize": 14,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "explorer.confirmDelete": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "breadcrumbs.enabled": true,
+  "editor.parameterHints.enabled": false
 }
 ```
